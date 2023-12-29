@@ -1,0 +1,185 @@
+@import url('http://fonts.googleapis.com/css2?family=karla:wght@400;700&family=Leckerli+One&family=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --------------------global ------------------- */
+h1{
+  font-size: 6.5vw; 
+}
+h3{
+  font-family: 'Merriweather', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+h4{
+  font-size: 1.1rem;
+  font-family: 'Merriweather', serif ;
+  font-weight: 700;
+  word-spacing: 0.4vw;
+}
+h6{
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #6caa7f;
+}
+p{
+  font-size: 1rem;
+  font-family: 'Karla', sans-serif;
+  line-height: 1.5rem;
+}
+button{
+  background: #6caa7f;
+  border-style: none;
+  padding: 0.7rem 1.3rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff; 
+}
+hr{
+  background-color: #00b74c;
+  color: #00a946;
+   height: 0.7rem; 
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+ header .intro{
+ position: relative;
+}
+header .intro .head{
+  position: absolute;
+   top: 50%;
+  left: 50%; 
+  transform: translate( -50%, -50%) ; 
+}
+header .intro .head h1{
+  font-family: "Leckerli one", cursive;
+  color: #000;
+  font-size: 4.5rem;
+}
+header .intro .head h6{
+  color:#27ae60;
+  letter-spacing: 0.3rem;
+} 
+header .intro .head p::after{
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 5rem;
+ height: 2rem;
+ background: #27ae60;
+}
+
+  header .navbar .navbar-nav .nav-link::after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #2ecc71;
+  transition: width 0.3s;
+}  
+header .navbar .navbar-nav .nav-link:hover::after{
+  width: 60%;
+  height: 2px;
+  background: #2ecc71;
+  transition: width 0.3s;
+  border-bottom: 2px solid #27ae60; 
+}
+header .navbar .navbar-nav i{
+  font-size: 1.rem;
+  color: #7aca8d;
+  cursor: pointer;
+}
+
+.featured .row .one{
+  height: 300px;
+  position: relative;
+}
+.featured .row .one img{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+.featured .row .one .text{
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.featured .row .one .text p{
+  letter-spacing: 0.2rem;
+  line-height: 2px;
+}
+.featured .row .one .text a{
+  text-decoration: none;
+  border-style: none;
+  color: #fff;
+  font-size: 0.9rem;
+}
+.featured .row .one .text a::after{
+  content: "";
+  display: block;
+  width: 30%;
+  height: 2px;
+  background: #2ecc71;
+}
+.subscription{
+  background: #defabd;
+}
+.subscription .row .sub input{
+  outline: none;
+  border: 1px solid #6caa7f;
+}
+.subscription .row .sub input::placeholder{
+  font-size: 0.9rem;
+}
+
+.blog .row .post a{
+  text-decoration: none;
+  font-size: 0.9rem;
+  color:#27ae60;
+  font-weight: bold;
+  border-style: none;
+}
+
+.blog .row .sidebar .side2 .row .sidetext h4{
+   font-size: 1rem;
+}
+
+.blog .row .sidebar .side2 .row .sidetext a{
+  text-decoration: none;
+  border-style: none;
+  color: #6caa7f;
+  font-size: 0.8rem;
+}
+.blog .side3 .one{
+  height: 300px;
+  position: relative;
+}
+.blog .side3 .one img{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+.blog .side3 .one .text{
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10rem 1.1rem 0 1.1rem;
+}
